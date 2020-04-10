@@ -1,2 +1,3 @@
-web: python3 logbot.py
+worker: python3 logbot.py
+heroku ps:scale worker=0
 heroku ps:scale worker=1

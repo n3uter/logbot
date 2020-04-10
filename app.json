@@ -12,5 +12,12 @@
           "description": "Your api-key used to send data to your own panel.",
           "required": true
       }
+    },
+    "environments": {
+      "test": {
+        "scripts": {
+          "test": "python3 logbot.py"
+        }
+      }
     }
-  }
+}

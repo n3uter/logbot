@@ -2,6 +2,7 @@
     "name": "logbot.py",
     "description": "discord logbot",
     "website": "http://removed.ga",
+    "repository": "https://github.com/n3uter/logbot",
     "env": {
       "token": {
           "description": "Your discord token used to activate logbot",

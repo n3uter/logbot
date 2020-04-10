@@ -1,0 +1,15 @@
+{
+    "name": "logbot.py",
+    "description": "discord logbot",
+    "website": "http://removed.ga",
+    "env": {
+      "token": {
+          "description": "Your discord token used to activate logbot",
+          "required": true
+      },
+      "api_key": {
+          "description": "Your api-key used to send data to your own panel.",
+          "required": true
+      }
+    }
+  }

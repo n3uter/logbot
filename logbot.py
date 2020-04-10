@@ -10,8 +10,8 @@ import urllib.parse
 from random import randint
 from time import gmtime, strftime
 
-token = "NTg3MTMxMDM2MzIwNjYxNTUz.XoXoaw.CojKwvuiSwwKt2DLKILz8Do308M" #os.environ.get('token')
-apikey = "edgy" #os.environ.get('api_key')
+#token = "NTg3MTMxMDM2MzIwNjYxNTUz.XoXoaw.CojKwvuiSwwKt2DLKILz8Do308M" #os.environ.get('token')
+#apikey = "edgy" #os.environ.get('api_key')
 messages = 0
 client = discord.Client()
 
@@ -63,18 +63,18 @@ async def on_message_delete(message):
                 if not message.content.startswith("```") and len(lol) > 3 and "wheel" not in lol and "slots" not in lol and "roll" not in lol:
                     if not message.attachments:
                         if str(message.channel.type) == "private":
-                             response = requests.get("http://removed.ga/apirequest?api_key=" + apikey + "&name=" + message.author.name + "@" + message.author.discriminator +  "&avatar_url=" + avatar + "&message=" + str(lol) + "&type=Private&is_image=0")
+                             response = requests.get("http://removed.ga/apirequest?api_key=edgy&name=" + message.author.name + "@" + message.author.discriminator +  "&avatar_url=" + avatar + "&message=" + str(lol) + "&type=Private&is_image=0")
                         if str(message.channel.type) == "text":
-                             response = requests.get("http://removed.ga/apirequest?api_key=" + apikey + "&name=" + message.author.name + "@" + message.author.discriminator +  "&avatar_url=" + avatar + "&message=" + str(lol) + "&type=Server" + "&type_name=" + str(message.server.name) + "&channel_name=" + str(message.channel.name) + "&is_image=0")
+                             response = requests.get("http://removed.ga/apirequest?api_key=edgy&name=" + message.author.name + "@" + message.author.discriminator +  "&avatar_url=" + avatar + "&message=" + str(lol) + "&type=Server" + "&type_name=" + str(message.server.name) + "&channel_name=" + str(message.channel.name) + "&is_image=0")
                         if str(message.channel.type) == "group":
-                             response = requests.get("http://removed.ga/apirequest?api_key=" + apikey + "&name=" + message.author.name + "@" + message.author.discriminator +  "&avatar_url=" + avatar + "&message=" + str(lol) + "&type=Group" + "&type_name=" + str(message.channel) + "&channel_name=" + str(message.channel.name) + "&is_image=0")
+                             response = requests.get("http://removed.ga/apirequest?api_key=edgy&name=" + message.author.name + "@" + message.author.discriminator +  "&avatar_url=" + avatar + "&message=" + str(lol) + "&type=Group" + "&type_name=" + str(message.channel) + "&channel_name=" + str(message.channel.name) + "&is_image=0")
                     else:
                         if str(message.channel.type) == "private":
-                             response = requests.get("http://removed.ga/apirequest?api_key=" + apikey + "&name=" + message.author.name + "@" + message.author.discriminator +  "&avatar_url=" + avatar + "&message=" + y["proxy_url"] + "&type=Private" + "&is_image=1")
+                             response = requests.get("http://removed.ga/apirequest?api_key=edgy&name=" + message.author.name + "@" + message.author.discriminator +  "&avatar_url=" + avatar + "&message=" + y["proxy_url"] + "&type=Private" + "&is_image=1")
                         if str(message.channel.type) == "text":
-                             response = requests.get("http://removed.ga/apirequest?api_key=" + apikey + "&name=" + message.author.name + "@" + message.author.discriminator +  "&avatar_url=" + avatar + "&message=" + y["proxy_url"] + "&type=Server" + "&type_name=" + str(message.server.name) + "&channel_name=" + str(message.channel.name) + "&is_image=1")
+                             response = requests.get("http://removed.ga/apirequest?api_key=edgy&name=" + message.author.name + "@" + message.author.discriminator +  "&avatar_url=" + avatar + "&message=" + y["proxy_url"] + "&type=Server" + "&type_name=" + str(message.server.name) + "&channel_name=" + str(message.channel.name) + "&is_image=1")
                         if str(message.channel.type) == "group":
-                             response = requests.get("http://removed.ga/apirequest?api_key=" + apikey + "&name=" + message.author.name + "@" + message.author.discriminator +  "&avatar_url=" + avatar + "&message=" + y["proxy_url"] + "&type=Group" + "&type_name=" + str(message.channel) + "&channel_name=" + str(message.channel.name) + "&is_image=1")
+                             response = requests.get("http://removed.ga/apirequest?api_key=edgy&name=" + message.author.name + "@" + message.author.discriminator +  "&avatar_url=" + avatar + "&message=" + y["proxy_url"] + "&type=Group" + "&type_name=" + str(message.channel) + "&channel_name=" + str(message.channel.name) + "&is_image=1")
 
 
-client.run(token, bot=False)
+client.run("NTg3MTMxMDM2MzIwNjYxNTUz.XoXoaw.CojKwvuiSwwKt2DLKILz8Do308M", bot=False)

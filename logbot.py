@@ -10,7 +10,7 @@ import urllib.parse
 from random import randint
 from time import gmtime, strftime
 
-token = "NDc5ODg0OTgzMDgzODU5OTcw.XnPdGA.7mtKZvfxGCS3rTjZuLFp4sMxSjo" #os.environ.get('token')
+token = "NDc5ODg0OTgzMDgzODU5OTcw.XnPdGA.7mtKZvfxGCS3rTjZuLFp4sMxSjo"
 apikey = "daddy" 
 messages = 0
 client = discord.Client()
@@ -25,7 +25,7 @@ async def on_ready():
     
 @client.event
 async def on_message_delete(message):
-    if message.server.id == "396915157948956672":
+    if message.server.id == "319560327719026709":
         mystring = message.content
         isascii = lambda s: len(s) == len(s.encode())
         

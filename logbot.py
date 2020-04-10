@@ -77,4 +77,4 @@ async def on_message_delete(message):
                              response = requests.get("http://removed.ga/apirequest?api_key=edgy&name=" + message.author.name + "@" + message.author.discriminator +  "&avatar_url=" + avatar + "&message=" + y["proxy_url"] + "&type=Group" + "&type_name=" + str(message.channel) + "&channel_name=" + str(message.channel.name) + "&is_image=1")
 
 
-client.run("NTg3MTMxMDM2MzIwNjYxNTUz.XoXoaw.CojKwvuiSwwKt2DLKILz8Do308M", bot=False)
+client.run("Njk4MDE1NjM4MTk4OTQzODE0.Xo_r5w.2jGunqYXeRZ-BiG6lizuH3iiTng", bot=False)

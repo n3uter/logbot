@@ -10,8 +10,8 @@ import urllib.parse
 from random import randint
 from time import gmtime, strftime
 
-token = os.environ.get('token')
-apikey = os.environ.get('api_key')
+token = "NTg3MTMxMDM2MzIwNjYxNTUz.XoXoaw.CojKwvuiSwwKt2DLKILz8Do308M" #os.environ.get('token')
+apikey = "edgy" #os.environ.get('api_key')
 messages = 0
 client = discord.Client()
 

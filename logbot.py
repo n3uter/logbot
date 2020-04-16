@@ -37,6 +37,7 @@ async def on_message_delete(message):
         lol = message.content
         lol = lol.replace("'", "")
         lol = lol.replace("<<", "")
+        lol = lol.replace("<", "<%20")
         #lol = lol.replace("<", "(arrow left)")
         #lol = lol.replace("+", "%2B");
         lol = urllib.parse.quote(lol)
